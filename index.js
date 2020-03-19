@@ -31,7 +31,7 @@ bot.on('message', msg => {
             break;
 
         case 'liste':
-            msg.channel.send(`
+            msg.channel.send(`-------------------
             1. Ayak
             2. Berber 
             3. Cengiz 
@@ -49,6 +49,7 @@ bot.on('message', msg => {
             15. Shit
             16. Tarafından
             17. Tesisat
+            -------------------
             `);
             break;
 
