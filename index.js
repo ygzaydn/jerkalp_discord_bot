@@ -3,9 +3,8 @@ const bot = new Discord.Client();
 
 const token = process.env.token;
 
-/* const token = `NjkwMTI0MDIxMTMxNzcxOTQ3.XnNr0Q.GMN9IP5EhkAvKxjkk0kpbCIWdy4`
- */
-const PREFIX = '-';
+// const token = `NjkwMTI0MDIxMTMxNzcxOTQ3.XnNr0Q.GMN9IP5EhkAvKxjkk0kpbCIWdy4`
+const PREFIX = '<';
 
 
 bot.on('ready', () => {
@@ -17,9 +16,9 @@ bot.on('message', msg => {
 
     switch(args[0]){
         
-        case 'ping':
-            msg.reply('pong!');
-            msg.channel.send('pong!');
+        case 'deneme':
+            msg.reply('1-2-3!');
+            msg.channel.send('1-2-3!');
             break;
 
         case 'uza':
@@ -28,7 +27,7 @@ bot.on('message', msg => {
             break;
 
         case 'liste':
-            msg.channel.send(`Bunlar var abi
+            msg.channel.send(`
             1. Ayak
             2. Berber 
             3. Cengiz 
@@ -49,7 +48,7 @@ bot.on('message', msg => {
             `);
             break;
 
-        case 'play':
+        case 'oynat':
 
             if(!args[1]) return msg.reply('Ne diyon kardeş')
 
