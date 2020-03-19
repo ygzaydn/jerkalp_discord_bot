@@ -27,7 +27,7 @@ bot.on('message', msg => {
             break;
 
         case 'uza':
-            voice.channel.leave();
+            msg.member.voice.channel.leave();
             break;
 
         case 'liste':
