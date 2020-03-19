@@ -21,9 +21,13 @@ bot.on('message', msg => {
             msg.channel.send('1-2-3!');
             break;
 
-        case 'uza':
+        case 'temizle':
             if(!args[1]) return msg.reply('Ne diyon kardeş')
             msg.channel.bulkDelete(args[1],true)
+            break;
+
+        case 'uza':
+            voice.channel.leave();
             break;
 
         case 'liste':
